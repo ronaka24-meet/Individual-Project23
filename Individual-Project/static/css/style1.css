@@ -1,4 +1,7 @@
+/*title*/
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+/*pra*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
 
 body{
 	margin: 0;
@@ -7,13 +10,15 @@ body{
 	background: black;
 }
 
+
 section{
 	position: relative;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	gap: 2rem;
 	align-items: center;
-	min-height: 400px;
-	padding: 100px 20vw;
+	/*min-height: 400px;*/
+	padding: 0px 20vw;
 }
 
 .orange {
@@ -41,7 +46,7 @@ section{
 }
 
 .img{
-	max-width:400px; 
+	max-width:450px; 
 }
 
 .spacer {
@@ -54,4 +59,111 @@ section{
 
 .layer1 {
 	background-image: url('layered1.svg');
-}/*<link rel="stylesheet" href="{{url_for('static', filename='css/style1.css')}}" />*/
+}
+
+.layer2 {
+	background-image: url('waves_orange2yellow.svg');
+}
+
+.layer3 {
+	background-image: url('yellow2green.svg');
+}
+
+.layer4 {
+	background-image: url('green2blue.svg');
+}
+
+.layer5 {
+	background-image: url('blue2purple.svg');
+}
+
+.layer6 {
+	background-image: url('purple2end.svg');
+}
+
+
+.title{
+	font-size:11vw;
+    text-shadow: 5px 5px 0px #7722e7, 
+    10px 10px 0px #8522e3, 
+    15px 15px 0px  #9323de, 
+    20px 20px 0px #a924d7, 
+    25px 25px 0px #c124d0, 
+    30px 30px 0px #da25c8;
+}
+
+
+.p_idex{
+	font-family: 'Dosis', sans-serif;
+	font-size:2.7vw;
+  	/*text-shadow: 2px 2px 5px black;*/
+}
+
+.section_index{
+	padding: 0px 10vw;
+}
+
+
+
+/* CSS */
+.button-56 {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
+
+.button-continer {
+	display: flex;
+	align-items: center;
+}
