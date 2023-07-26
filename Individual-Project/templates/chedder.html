@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post" action="/chedder">
+    	<!-- Heading -->
+        <h4>
+            Create a chedder
+        </h4>
+
+        <!-- Subheading -->
+        <p >
+            Please fill up the information to tweet.
+        </p>
+
+        <!-- Full name -->
+        <div>
+            <label>Title*</label>
+            <div class="input-group">
+                <input type="text"  name="title">
+            </div>
+        </div>
+
+        <!-- Full name -->
+        <div>
+            <label>Text*</label>
+            <div class="input-group">
+                <input type="text"  name="text">
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <input type="submit"/>
+        </div>
+        
+    </form>
+    {% for post in posts %}
+	<div>
+		<p>username: {{posts[post]['uid']}}<br>
+			title: {{posts[post]['title']}}<br>
+			text: {{posts[post]['text']}}</p>
+	</div>
+	{% endfor %}
+</body>
+</html>

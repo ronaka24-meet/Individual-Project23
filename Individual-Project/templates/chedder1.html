@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+    <!-- <link rel="javascript" href="{{url_for('static', filename='js/script.js')}}" />
+    <link rel='javascript' herf="" -->
+</head>
+<body>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/464612/nlp_compromise.min.js"></script>
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+
+    <form method="post" action="/home">
+        <!-- Heading -->
+        <h4>
+        chedder with others
+        </h4>
+
+        <!-- Subheading -->
+        <p >
+            write something.
+        </p>
+
+        <!-- title -->
+        <div>
+            <label>title*</label>
+            <div>
+                <input type="text"  name="title" id="title" required>
+            </div>
+        </div>
+
+        <!-- text -->
+        <div>
+            <label>Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" minlength=1>
+            </div>
+        </div>
+        
+        <!-- Button -->
+        <div>
+            <input type="submit"/>
+        </div>
+    </form>
+
+        <div id='bodybox'>
+      <div id='chatborder'>
+        <p id="chatlog7" class="chatlog">&nbsp;</p>
+        <p id="chatlog6" class="chatlog">&nbsp;</p>
+        <p id="chatlog5" class="chatlog">&nbsp;</p>
+        <p id="chatlog4" class="chatlog">&nbsp;</p>
+        <p id="chatlog3" class="chatlog">&nbsp;</p>
+        <p id="chatlog2" class="chatlog">&nbsp;</p>
+        <p id="chatlog1" class="chatlog">&nbsp;</p>
+        <input type="text" name="chat" id="chatbox" placeholder="Hi there! Type here to talk to me." onfocus="placeHolder()">
+      </div>
+      <br>
+      <br>
+  </div>
+
+    
+</body>
+</html>

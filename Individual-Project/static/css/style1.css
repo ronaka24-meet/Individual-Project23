@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+body{
+	margin: 0;
+	font-family: 'Concert One', cursive;
+	color: white;
+	background: black;
+}
+
+section{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 400px;
+	padding: 100px 20vw;
+}
+
+.orange {
+	background-color: #ff8500;
+}
+
+.red {
+	background-color: #da1e37;
+}
+
+.yellow {
+	background-color: #ffc857;
+}
+
+.green {
+	background-color: #a5be00;
+}
+
+.purple {
+	background-color: #a06cd5;
+}
+
+.blue {
+	background-color: #00b4d8;
+}
+
+.img{
+	max-width:400px; 
+}
+
+.spacer {
+	aspect-ratio: 960/300;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.layer1 {
+	background-image: url('layered1.svg');
+}/*<link rel="stylesheet" href="{{url_for('static', filename='css/style1.css')}}" />*/
