@@ -45,13 +45,12 @@ def signup():
 	if request.method == 'POST':
 		email = request.form['email']
 		password = request.form['password']
-		full_name = request.form['full_name']
+		fav_cheese = request.form['fav_cheese']
 		username = request.form['username']
-		bio = request.form['bio']
 		try:
 			login_session['user'] = auth.create_user_with_email_and_password(email, password)
 			UID = login_session['user']['localId']
-			user = {'email': email, 'password': password, 'full_name': full_name, 'username': username, 'bio': bio}
+			user = {'email': email, 'password': password, 'fav_cheese': fav_cheese, 'username': username}
 			db.child("Users").child(UID).set(user)
 			return redirect(url_for('home'))
 		except:

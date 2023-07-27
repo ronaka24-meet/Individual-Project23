@@ -3,68 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Signup</title>
-
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
 </head>
 <body>
-    <form method="post" action="/signup">
-        <!-- Heading -->
-        <h4>
-            Create an account
-        </h4>
 
-        <!-- Subheading -->
-        <p >
-            Please fill up your information below to sign up.
-        </p>
+    <section class = orange>
+        <h1 class="title">Sign Up</h1>
+    </section>
 
-        <!-- Email -->
-        <div>
-            <label>Email address*</label>
-            <div>
-                <input type="email"  name="email" id="emailStr" required>
-            </div>
-        </div>
+    <div class="spacer background1"></div>
 
-        <!-- Password -->
-        <div>
-            <label>Password*</label>
-            <div class="input-group">
-                <input type="password"  name="password" minlength="6">
-            </div>
-        </div>
+    <section class = green>
+        <div class="container">
+          <div class="text"> Sign Up To Mozare//a </div>
+          <form method="post" action="/signup">
 
-        <!-- Full name -->
-        <div>
-            <label>Full name*</label>
-            <div class="input-group">
-                <input type="text"  name="full_name">
-            </div>
-        </div>
+             <div class="form-row">
+                <div class="input-data">
+                   <input type="text" name="username" required>
+                   <div class="underline"></div>
+                   <label for="">UserName</label>
+                </div>
 
-        <!-- Username -->
-        <div>
-            <label>Username*</label>
-            <div class="input-group">
-                <input type="text"  name="username">
-            </div>
-        </div>
+                <div class="input-data">
+                   <input type="text" name="fav_cheese" required>
+                   <div class="underline"></div>
+                   <label for="">Favorite Cheese</label>
+                </div>
+             </div>
 
-        <!-- Bio -->
-        <div>
-            <label>Bio*</label>
-            <div class="input-group">
-                <input type="text"  name="bio" maxlength="280">
-            </div>
-        </div>
-        
-        <!-- Button -->
-        <div>
-            <input type="submit"/>
-        </div>
-    </form>
-    <br>
-    <a href="/signin"><button>sign in</button></a>
-    <a href="/"><button>go back</button></a>
+
+             <div class="form-row">
+                <div class="input-data">
+                   <!-- <input type="text" required> -->
+                   <input type="email"  name="email" required>
+                   <div class="underline"></div>
+                   <label for="">Email Address</label>
+                </div>
+
+                <div class="input-data">
+                   <input type="password" name="password" minlength="6" required>
+                   <div class="underline"></div>
+                   <label for="">Password</label>
+                </div>
+             </div>
+
+                <div class="form-row submit-btn">
+                   <div class="input-data">
+                      <div class="inner"></div>
+                      <input type="submit" value="submit">
+                   </div>
+                </div>
+          </form>
+          </div>
+        </section>
+
+        <div class="spacer background2"></div>
+
+      <section class = 'orange'>
+        <center>
+        <a href="/signin"><button class= 'simple-button'>sign in</button></a>
+        <a href="/"><button class='simple-button section_button' >go back</button></a>
+    </center>
+      </section>
+
+       <div class="spacer background3"></div>
 </body>
 
 
